@@ -1,0 +1,26 @@
+Total count		1000000000
+Count of 0		99993942
+Count of 1		99997334
+Count of 2		100002410
+Count of 3		99986911
+Count of 4		100011958
+Count of 5		99998885
+Count of 6		100010387
+Count of 7		99996061
+Count of 8		100001839
+Count of 9		100000273
+
+Total probability	1.0
+Probability of 0	0.099993942
+Probability of 1	0.099997334
+Probability of 2	0.10000241
+Probability of 3	0.099986911
+Probability of 4	0.100011958
+Probability of 5	0.099998885
+Probability of 6	0.100010387
+Probability of 7	0.099996061
+Probability of 8	0.100001839
+Probability of 9	0.100000273
+
+Block size		16384
+Time taken		185.0933907032013s
