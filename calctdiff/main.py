@@ -2,8 +2,15 @@
 
 
 import re
+import sys
+import argparse
 import datetime as dt
 import input_helper as ih
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-e", "--exit-on-error", action="store_true")
+args = parser.parse_args()
 
 
 def getdate(msg):
@@ -13,6 +20,8 @@ def getdate(msg):
         l = len(s)
         if l != 4:
             if l != 8:
+                if args.exit_on_error:
+                    sys.exit(1)
                 print("Input could not be understood.")
                 continue
             else:
@@ -23,6 +32,8 @@ def getdate(msg):
 
                     return dt.datetime(year, month, day)
                 except:
+                    if args.exit_on_error:
+                        sys.exit(1)
                     print("You must enter a valid date.")
                     continue
         else:
@@ -33,6 +44,8 @@ def getdate(msg):
 
                 return dt.datetime(year, month, day)
             except:
+                if args.exit_on_error:
+                    sys.exit(1)
                 print("You must enter a valid date.")
                 continue
 
